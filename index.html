@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIOIU8://PULSE</title>
+    <meta name="description" content="FIOIU8 的 GitHub 资料、贡献记录与开源项目。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-inner">
+        <a class="brand" href="#profile" aria-label="返回个人简介">FIOIU8://<em>PULSE</em></a>
+        <nav class="nav" aria-label="主导航">
+          <a class="active" href="#profile" data-section="profile">简介</a>
+          <a href="#contributions" data-section="contributions">贡献</a>
+          <a href="#projects" data-section="projects">仓库</a>
+          <a href="./DevInfo/">DevInfo</a>
+        </nav>
+        <a class="nav-github" href="https://github.com/FIOIU8" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="profile-section reveal" id="profile" aria-labelledby="profile-title">
+        <div class="avatar-wrap">
+          <img id="avatar" class="avatar" src="https://avatars.githubusercontent.com/u/176991666?v=4" alt="FIOIU8 的 GitHub 头像" />
+          <span class="avatar-ring" aria-hidden="true"></span>
+        </div>
+        <div class="profile-copy">
+          <p class="eyebrow">GitHub Profile / Android / Kotlin</p>
+          <h1 id="profile-title"><span id="profile-name">FIOIU8</span><i>.</i></h1>
+          <a id="profile-link" class="profile-link" href="https://github.com/FIOIU8" target="_blank" rel="noreferrer">@FIOIU8</a>
+          <p id="profile-bio" class="profile-bio">持续构建 Android、Kotlin、设备信息工具和自动化相关项目。</p>
+        </div>
+      </section>
+
+      <section class="stats-bar reveal" aria-label="GitHub 数据概览">
+        <article class="stat"><strong id="public-repos">--</strong><span>公开仓库</span></article>
+        <article class="stat"><strong id="followers">--</strong><span>关注者</span></article>
+        <article class="stat"><strong id="total-stars">--</strong><span>获得 Stars</span></article>
+        <article class="stat"><strong id="total-forks">--</strong><span>仓库 Forks</span></article>
+      </section>
+
+      <section class="section heatmap-section reveal" id="contributions" aria-labelledby="contributions-title">
+        <div class="section-heading heatmap-heading">
+          <div>
+            <p class="eyebrow">Contribution Graph</p>
+            <h2 id="contributions-title">一年代码轨迹</h2>
+          </div>
+          <p class="heatmap-total"><strong id="contribution-total">--</strong> 次贡献</p>
+        </div>
+        <div class="heatmap-scroll" tabindex="0" aria-label="过去一年的 GitHub 贡献热力图">
+          <div id="heatmap-months" class="heatmap-months" aria-hidden="true"></div>
+          <div class="heatmap-row">
+            <div class="heatmap-days" aria-hidden="true"><span></span><span>一</span><span></span><span>三</span><span></span><span>五</span><span></span></div>
+            <div id="heatmap-grid" class="heatmap-grid"><p class="loading-state">正在读取贡献记录…</p></div>
+          </div>
+        </div>
+        <div class="heatmap-footer">
+          <p id="heatmap-status">数据来自 GitHub 公开活动</p>
+          <div class="heatmap-legend" aria-label="贡献数量图例"><span>少</span><i class="level-0"></i><i class="level-1"></i><i class="level-2"></i><i class="level-3"></i><i class="level-4"></i><span>多</span></div>
+        </div>
+      </section>
+
+      <section class="section projects-section reveal" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading projects-heading">
+          <div>
+            <p class="eyebrow">Repositories</p>
+            <h2 id="projects-title">公开仓库</h2>
+          </div>
+          <p id="repo-result-count" class="repo-result-count" aria-live="polite">正在加载…</p>
+        </div>
+        <div class="repo-toolbar">
+          <label class="repo-search">
+            <span class="search-icon" aria-hidden="true"></span>
+            <span class="sr-only">搜索仓库</span>
+            <input id="repo-search" type="search" placeholder="搜索名称、描述或标签" autocomplete="off" />
+            <button id="repo-search-clear" class="icon-button" type="button" aria-label="清空搜索" title="清空搜索" hidden>×</button>
+          </label>
+          <div id="language-filters" class="language-filters" aria-label="按语言筛选仓库"></div>
+        </div>
+        <div id="project-list" class="project-list" aria-live="polite">
+          <p class="repo-empty">正在读取 GitHub 仓库…</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>FIOIU8://PULSE · 数据由 <a href="https://docs.github.com/en/rest" target="_blank" rel="noreferrer">GitHub REST API</a> 提供</p>
+    </footer>
+    <div id="heatmap-tooltip" class="heatmap-tooltip" role="tooltip"></div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
