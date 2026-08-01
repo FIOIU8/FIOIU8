@@ -230,6 +230,6 @@ GitHub REST API 匿名访问每小时限制 60 次/IP。频繁刷新会触发 40
 
 ## 📄 License
 
-- **本站源码**：采用 [**Apache License 2.0**](https://www.apache.org/licenses/LICENSE-2.0) 发布
+- **本站源码**：**无**。
 - **[DevInfo](https://github.com/FIOIU8/DevInfo) 项目**：采用 **GPL-3.0-or-later** — [详见其 LICENSE](https://github.com/FIOIU8/DevInfo/blob/main/LICENSE)
 - **第三方 API 数据**：各服务自有条款（GitHub API Terms、jogruber.de 公共服务）
